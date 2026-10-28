@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", serif;
+  --font-serif: "Crimson Pro", serif;
+  --color-hogwarts-gold: #d4af37;
+  --color-hogwarts-burgundy: #740001;
+  --color-hogwarts-dark: #1a1a1a;
+}
+
+body {
+  @apply bg-hogwarts-dark text-white font-serif;
+  background-image: radial-gradient(circle at center, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.parchment-bg {
+  background-color: #f4e4bc;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.magic-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.magic-glow:focus {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+}
